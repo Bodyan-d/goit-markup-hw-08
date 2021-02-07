@@ -1,0 +1,58 @@
+.signup-form {
+  width: 450px;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+
+  &:focus-within &-input {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+
+  &:focus-within .icon {
+    color: $accent-color;
+  }
+
+  &-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 116%;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 0.01em;
+    color: $dark-sec-color;
+  }
+
+  &-cont {
+    position: relative;
+    color: $dark-main-color;
+  }
+
+  &-input {
+    width: 100%;
+    outline: none;
+
+    padding: 10px 10px 10px 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    transition: border 250ms linear;
+  }
+
+  & .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    transition: color 250ms linear;
+  }
+}

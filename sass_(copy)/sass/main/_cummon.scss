@@ -1,0 +1,80 @@
+body {
+  /*padding-top: 79px;*/
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  background-color: $main-backgound-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+
+  transition: color 250ms linear;
+}
+
+button {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background: none;
+}
+
+a:hover,
+a:focus {
+  color: $accent-color;
+}
+
+p {
+  margin: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.main-portfolio {
+  padding: 94px;
+}
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0px 15px;
+
+  @media screen and (-width: $mobile-width) {
+    width: $mobile-width;
+  }
+}
+
+.visually-hiden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  display: none;
+}

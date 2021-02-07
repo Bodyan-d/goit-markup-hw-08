@@ -1,18 +1,18 @@
 .header-mobile {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
   .icon-menu {
     width: 40px;
     height: 40px;
   }
   .mobile-menu-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
   }
 }
 
 .mobile-logo {
-  padding: 16px 0;
   color: #000000;
   font-weight: 700;
   font-size: 26px;

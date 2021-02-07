@@ -1,0 +1,76 @@
+.mailing {
+  &-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #fff;
+  }
+
+  &-input {
+    display: flex;
+
+    margin-top: 20px;
+  }
+
+  &-holder {
+    padding: 15px 15px 15px 15px;
+    margin-right: 12px;
+    width: 350px;
+    height: 50px;
+    outline: none;
+    background: none;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+
+  &-holder::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.mailing-submit {
+  display: flex;
+
+  padding: 10px 30px;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: #fff;
+
+  &-title {
+    margin-right: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+
+    letter-spacing: 0.06em;
+
+    color: #fff;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+
+    fill: currentColor;
+  }
+}

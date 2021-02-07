@@ -1,0 +1,52 @@
+.logo-footer {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.logo-footer-accent {
+  color: $accent-color;
+}
+
+.footer {
+  background-color: $dark-main-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-address-cont {
+    margin-right: 70px;
+  }
+
+  &-address {
+    margin-top: 20px;
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $main-backgound-color;
+  }
+
+  &-streed {
+    margin-bottom: 10px;
+  }
+
+  &-mail {
+    margin-bottom: 10px;
+  }
+
+  &-contact {
+    font-style: normal;
+    color: $dark-add-color;
+  }
+}

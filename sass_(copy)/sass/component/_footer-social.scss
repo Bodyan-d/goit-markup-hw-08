@@ -1,0 +1,44 @@
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.social-links-fotter {
+  display: flex;
+  margin-right: 70px;
+}
+
+.footer-link {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  margin-right: 10px;
+
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms linear;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: $accent-color;
+  color: #fff;
+}
+
+.social-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

@@ -240,7 +240,16 @@ li {
 }
 
 .header-mobile {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .header-mobile .icon-menu {
@@ -248,14 +257,7 @@ li {
   height: 40px;
 }
 
-.header-mobile .mobile-menu-button {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
 .mobile-logo {
-  padding: 16px 0;
   color: #000000;
   font-weight: 700;
   font-size: 26px;
@@ -275,7 +277,7 @@ li {
   margin-right: auto;
   margin-bottom: 95px;
   max-width: 480px;
-  height: 400px;
+  min-height: 400px;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg.jpg);

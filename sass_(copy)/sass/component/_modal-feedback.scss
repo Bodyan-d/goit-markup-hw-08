@@ -1,0 +1,31 @@
+.form-feedback {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border 250ms linear;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 142%;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+    transition: color 250ms linear;
+  }
+}
+.form-field:focus-within .form-feedback {
+  outline: none;
+  border: 1px solid $accent-color;
+}
+
+.form-field:focus-within .form-feedback::placeholder {
+  color: rgba(33, 150, 243, 0.5);
+}
