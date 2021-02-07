@@ -1,0 +1,40 @@
+.contact-links {
+  margin-left: auto;
+}
+
+.tel-link {
+  margin-right: 50px;
+
+  .envelope {
+    width: 20px;
+    height: 17px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.nav-contact {
+  display: flex;
+  align-items: center;
+  padding: 16px 0px;
+
+  color: $dark-sec-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms linear;
+
+  .smartphone {
+    width: 20px;
+    height: 17px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

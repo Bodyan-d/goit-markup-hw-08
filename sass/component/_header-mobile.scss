@@ -1,0 +1,26 @@
+.header-mobile {
+  position: relative;
+  .icon-menu {
+    width: 40px;
+    height: 40px;
+  }
+  .mobile-menu-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.mobile-logo {
+  padding: 16px 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: "Raleway", sans-serif;
+
+  .mobile-logo-accent {
+    color: $accent-color;
+  }
+}
