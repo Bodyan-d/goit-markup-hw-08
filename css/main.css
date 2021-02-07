@@ -88,6 +88,8 @@ li {
 
   width: 100%;*/
   background-color: #ffffff;
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 480px) {
@@ -250,6 +252,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  padding: 0 15px;
 }
 
 .header-mobile .icon-menu {
