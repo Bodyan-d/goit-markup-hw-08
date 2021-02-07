@@ -5,13 +5,14 @@
   margin-right: auto;
   margin-bottom: 95px;
   max-width: 480px;
-  min-height: 400px;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero-bg.jpg);
+  background-origin: border-box;
+  background-repeat: no-repeat;
 
   .hero-title {
     color: #ffffff;

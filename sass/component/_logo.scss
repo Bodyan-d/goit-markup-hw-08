@@ -7,8 +7,6 @@
   width: 100%;*/
 
   background-color: $main-backgound-color;
-  background-origin: border-box;
-  background-repeat: no-repeat;
 
   @media screen and (max-width: $mobile-width) {
     display: none;
