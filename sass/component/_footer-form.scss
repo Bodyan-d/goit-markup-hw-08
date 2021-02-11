@@ -1,4 +1,11 @@
 .mailing {
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+  }
+
   &-label {
     font-weight: 700;
     font-size: 14px;

@@ -19,6 +19,20 @@
 
   &-container {
     text-align: center;
+
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+
+  &-address-cont {
+    @media screen and (min-width: $tablet-width) {
+      margin-left: 61px;
+      margin-right: 165px;
+      margin-bottom: 60px;
+    }
   }
 
   &-address {

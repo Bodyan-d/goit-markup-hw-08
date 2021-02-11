@@ -46,7 +46,7 @@
   }
 }
 /*
-
+ For every nav item border bottom scaling-X when them in hover
 
 .open-new::after {
   content: "";
@@ -63,11 +63,11 @@
   background-color:$accent-color;
   color:$accent-color;
 
-  transform: scaleX(0;
+  transform: scaleX(0);
   transition: transform 250ms linear;
 }
 
 .open-new:hover::after {
-  transform: scaleX(1;
+  transform: scaleX(1);
 }
 */

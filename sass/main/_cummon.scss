@@ -65,8 +65,12 @@ li {
 
   padding: 0px 15px;
 
-  @media screen and (-width: $mobile-width) {
-    width: $mobile-width;
+  @media screen and (max-width: $mobile-width) {
+    max-width: $mobile-width;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
   }
 }
 

@@ -1,10 +1,9 @@
 .contact-links {
+  display: block;
   margin-left: auto;
 }
 
 .tel-link {
-  margin-right: 50px;
-
   .envelope {
     width: 20px;
     height: 17px;
@@ -16,7 +15,7 @@
 .nav-contact {
   display: flex;
   align-items: center;
-  padding: 16px 0px;
+  padding: 5px 0px;
 
   color: $dark-sec-color;
   font-weight: 500;

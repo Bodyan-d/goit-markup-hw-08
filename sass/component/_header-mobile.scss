@@ -3,14 +3,108 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 15px;
+  padding: 10px 15px;
 
-  .icon-menu {
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 48px 0px 48px 40px;
+
+  background-color: $main-backgound-color;
+
+  transition: opacity 250ms linear;
+
+  &-burger {
+    margin-right: 10px;
     width: 40px;
     height: 40px;
+
+    color: $dark-main-color;
   }
-  .mobile-menu-button {
+
+  &-burger:hover,
+  &-burger:focus {
+    color: $accent-color;
   }
+
+  &-button {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    color: $dark-main-color;
+  }
+
+  &-button:hover,
+  &-button:focus {
+    color: $accent-color;
+  }
+
+  &-nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 85%;
+    letter-spacing: 0.02em;
+
+    color: $dark-main-color;
+  }
+
+  .active {
+    color: $accent-color;
+  }
+
+  &-nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &-adress:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &-contact-links {
+    margin-top: 100px;
+    margin-bottom: 64px;
+  }
+
+  &-contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 85%;
+
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  &-mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+}
+
+.icon-menu {
+  width: 100%;
+  height: 100%;
+
+  fill: currentColor;
 }
 
 .mobile-logo {
@@ -22,6 +116,31 @@
   font-family: "Raleway", sans-serif;
 
   .mobile-logo-accent {
+    color: $accent-color;
+  }
+}
+
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+
+  letter-spacing: 0.02em;
+
+  &-item {
+    color: $accent-color;
+  }
+
+  &-item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &-link {
     color: $accent-color;
   }
 }

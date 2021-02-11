@@ -69,57 +69,59 @@
         <a class="mobile-logo" href="#">
           <span class="mobile-logo-accent">Web</span>Studio
         </a>
-        <button class="mobile-menu-button">
+        <button class="mobile-menu-burger" data-toggle-backdrop-menu>
           <svg class="icon-menu">
             <use href="./images/sprite-all/svg-sprite.svg#icon-burger"></use>
           </svg>
         </button>
-        <div class="mobile-menu visually-hiden">
-          <nav>
-            <svg class="icon-menu">
-              <use href="./images/sprite-all/svg-sprite.svg#icon-close"></use>
-            </svg>
-            <ul class="mobile-nav-links">
-              <li class="mobile-nav-item">
-                <a class="mobile-nav-link" href="#">Студия</a>
+        <div class="mobile-menu is-hidden" data-backdrop-menu>
+          <nav class="mobile-menu-nav">
+            <button class="mobile-menu-button" data-toggle-backdrop-schedule>
+              <svg class="icon-menu">
+                <use href="./images/sprite-all/svg-sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-nav-links">
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link active" href="#">Студия</a>
               </li>
-              <li class="mobile-nav-item">
-                <a class="mobile-nav-link open-new" href="./portfolio.html"
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link open-new" href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
-              <li class="mobile-nav-item">
-                <a class="mobile-nav-link open-new" href="#">Контакты</a>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link open-new" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
-          <ul class="mobile-nav-links mobile-contact-links">
-            <li class="mobile-logo-adress">
-              <a class="mobile-nav-contact mobile-tel" href="tel:380961111111">
+          <ul class="mobile-menu-nav-links mobile-menu-contact-links">
+            <li class="mobile-menu-adress">
+              <a class="mobile-menu-contact mobile-tel" href="tel:380961111111">
                 +38 096 111 11 11
               </a>
             </li>
-            <li class="mobile-logo-adress">
+            <li class="mobile-menu-adress">
               <a
-                class="mobile-nav-contact mobile-mail"
+                class="mobile-menu-mail mobile-mail"
                 href="mailto:info@devstudio.com"
               >
                 info@devstudio.com
               </a>
             </li>
           </ul>
-          <ul>
-            <li>
-              <a href="#">Instagram</a>
+          <ul class="mobile-social">
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">Instagram</a>
             </li>
-            <li>
-              <a href="#">Twitter</a>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">Twitter</a>
             </li>
-            <li>
-              <a href="#">Facebook</a>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">Facebook</a>
             </li>
-            <li>
-              <a href="#">LinkedIn</a>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -642,5 +644,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
