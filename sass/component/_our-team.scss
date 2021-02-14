@@ -26,9 +26,10 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-
-  &-card:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: $mobile-width) {
+    &-card:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &-des {
@@ -47,13 +48,14 @@
     text-align: center;
     margin-bottom: 30px;
   }
-
   @media screen and (min-width: $tablet-width) {
     &-cards {
       display: flex;
       flex-wrap: wrap;
     }
+  }
 
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     &-card {
       width: calc((100% - 60px) / 2);
       margin-bottom: 30px;
@@ -67,12 +69,28 @@
     &-card:nth-child(2n) {
       margin-right: 0px;
     }
+
+    &-title {
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &-card {
+      width: 270px;
+      padding-bottom: 24px;
+    }
+
+    &-card:not(:last-child) {
+      margin-right: 30px;
+    }
     &-pchoto {
       width: 100%;
     }
 
     &-title {
-      font-size: 28px;
+      font-size: 36px;
+      line-height: 1.17;
     }
   }
 }

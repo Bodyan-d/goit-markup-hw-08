@@ -72,6 +72,10 @@ li {
   @media screen and (min-width: $tablet-width) {
     width: $tablet-width;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .visually-hiden {

@@ -1,6 +1,9 @@
 .work {
   padding-bottom: 80px;
-  display: none;
+
+  @media screen and (max-width: $desktop-width - 1) {
+    display: none;
+  }
 
   &-title {
     font-weight: 700;

@@ -1,8 +1,14 @@
 .social {
-  text-align: center;
   margin-bottom: 60px;
-  @media screen and (max-width: $tablet-width - 1) {
+  text-align: center;
+
+  @media screen and (max-width: $tablet-width) {
     margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
+    margin: 0;
   }
 }
 
@@ -30,7 +36,7 @@
 
   margin-right: 10px;
 
-  color: #afb1b8;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 
   display: flex;

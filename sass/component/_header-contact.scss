@@ -1,6 +1,16 @@
 .contact-links {
   display: block;
   margin-left: auto;
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.logo-adress {
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
 }
 
 .tel-link {

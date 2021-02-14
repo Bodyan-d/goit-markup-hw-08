@@ -2,7 +2,7 @@
   padding-bottom: 95px;
   padding-top: 95px;
 
-  .features-icons {
+  &-icons {
     display: flex;
 
     width: 270px;
@@ -19,14 +19,14 @@
     height: 70px;
   }
 
-  .features-items {
+  &-items {
     display: flex;
     align-items: center;
   }
-  .features-item:not(:last-child) {
+  &-item:not(:last-child) {
     margin-right: 30px;
   }
-  .features-title {
+  &-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -36,7 +36,7 @@
     color: $dark-main-color;
   }
 
-  .features-des {
+  &-des {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

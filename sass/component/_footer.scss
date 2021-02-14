@@ -20,10 +20,15 @@
   &-container {
     text-align: center;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      text-align: left;
+      display: flex;
     }
   }
 
@@ -32,6 +37,11 @@
       margin-left: 61px;
       margin-right: 165px;
       margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin: 0;
+      margin-right: 70px;
     }
   }
 

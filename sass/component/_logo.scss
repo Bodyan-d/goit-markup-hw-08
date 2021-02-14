@@ -8,6 +8,11 @@
 
   background-color: $main-backgound-color;
 
+  & > .container {
+    display: flex;
+    align-items: center;
+  }
+
   @media screen and (max-width: $tablet-width - 1) {
     display: none;
   }
@@ -16,14 +21,6 @@
 .header-portfolio {
   margin-bottom: 95px;
   border-bottom: 1px solid #ececec;
-}
-
-.header,
-.header-portfolio {
-  & > .container {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .logo {
