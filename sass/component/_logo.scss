@@ -19,8 +19,12 @@
 }
 
 .header-portfolio {
-  margin-bottom: 95px;
+  margin-bottom: 60px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 95px;
+  }
 }
 
 .logo {

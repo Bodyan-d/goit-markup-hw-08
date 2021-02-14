@@ -3,8 +3,15 @@
   padding-bottom: 60px;
   padding-top: 60px;
 
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 95px;
+    padding-top: 95px;
+  }
+
   &-pchoto {
+    display: block;
     width: 100%;
+    height: auto;
     margin-bottom: 30px;
   }
 
@@ -26,7 +33,14 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  @media screen and (max-width: $mobile-width) {
+
+  @media screen and (max-width: $tablet-width - 1) {
+    &-card {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 450px;
+    }
+
     &-card:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -85,7 +99,10 @@
       margin-right: 30px;
     }
     &-pchoto {
+      display: block;
       width: 100%;
+      height: auto;
+      margin-bottom: 30px;
     }
 
     &-title {

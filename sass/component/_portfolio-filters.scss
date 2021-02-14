@@ -1,6 +1,10 @@
 .filters {
   padding-bottom: 60px;
 
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 95px;
+  }
+
   &-title {
     display: none;
   }
@@ -8,6 +12,8 @@
   &-buttons {
     display: flex;
 
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 
     @media screen and (max-width: $tablet-width - 1) {
@@ -17,6 +23,10 @@
 
     @media screen and (min-width: $tablet-width) {
       justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 50px;
     }
   }
 

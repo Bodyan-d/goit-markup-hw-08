@@ -1,5 +1,9 @@
 .features {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 95px;
+  }
 
   &-icons {
     display: flex;
@@ -11,6 +15,14 @@
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: $tablet-width - 1) {
+    &-items {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 450px;
+    }
   }
 
   .feature-icon {
