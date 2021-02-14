@@ -19,8 +19,7 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and (min-width: $mobile-width),
-    screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
@@ -43,8 +42,7 @@
         url("../images/hero/hero-bg-768.jpg");
     }
 
-    @media screen and (min-width: $tablet-width),
-      screen and (min-device-pixel-ratio: 2),
+    @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
@@ -71,8 +69,7 @@
         url("../images/hero/hero-bg-1600.jpg");
     }
 
-    @media screen and (min-width: $desktop-width),
-      screen and (min-device-pixel-ratio: 2),
+    @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
